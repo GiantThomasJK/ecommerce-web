@@ -1,3 +1,19 @@
+## Wireframe
+# Login
+![Login](./public/wireframe/Login.png)
+# Home Page
+![Home Page](./public/wireframe/Home.png)
+# Products Page
+![Products Page](./public/wireframe/Product.png)
+# Detail Page
+![Detail Page](./public/wireframe/Detail.png)
+# Cart Page
+![Cart Page](./public/wireframe/Cart.png)
+# Checkout Page
+![Cart Page](./public/wireframe/Checkout.png)
+# Profile Page
+![Cart Page](./public/wireframe/Profile.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
