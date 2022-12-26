@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Box from "../Box";
+import FlexBox from "../FlexBox";
 import Icon from "../icon/Icon";
+import Menu from "../Menu";
 import TextField from "../text-field/TextField";
 import StyledSearchBox from "./SearchBoxStyle";
 
@@ -25,6 +27,20 @@ const SearchBox: React.FC<SearchBoxProps> = () => {
           placeholder="Search and hit enter..."
           fullwidth
         />
+        <Menu           
+          className="category-dropdown"
+          direction="right"
+          handler={
+            <FlexBox className="dropdown-handler" alignItems="center">
+              <span>{category}</span>
+              <Icon variant="small">chevron-down</Icon>
+            </FlexBox>
+          }
+          >
+          
+     
+        </Menu>
+        
       </StyledSearchBox>
     </Box>
   );
