@@ -13,7 +13,7 @@ interface MenuProps {
     style?: CSSProperties;
 }
 
-const StyledMenu = styled.div<{ direction: string }>(
+const StyledMenu = styled.div<{ direction?: string }>(
     systemCss({
       position: "relative",
       ".menu-item-holder": {
@@ -23,6 +23,7 @@ const StyledMenu = styled.div<{ direction: string }>(
         position: "absolute",
         borderRadius: "6px",
         top: "calc(100% + 0.5rem)",
+        color: "#0000000",
         backgroundColor: themeGet("body.paper", "#ffffff"),
         boxShadow: themeGet("shadows.3", "0 6px 12px rgba(0, 0, 0, 0.16)"),
         zIndex: 100,
@@ -75,8 +76,10 @@ const StyledMenu = styled.div<{ direction: string }>(
   
     return (
       <StyledMenu direction={direction} {...props}>
+        <>
         {cloneElement(handler, { onClick: togglePopover })}
         {show && <div className="menu-item-holder">{children}</div>}
+        </>
       </StyledMenu>
     );
   };
